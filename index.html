@@ -278,7 +278,7 @@
         });
         
         $('#run').on('click', function(e){
-          path_length = $('#pathLength').val();
+          path_length = Number($('#pathLength').val());
           var rootEvent = rootEventSelect.val();
           var queryParams = {
             'from_date': date_to_string(params.from),
